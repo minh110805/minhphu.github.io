@@ -1,7 +1,6 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
-import seaborn as sns
 
 # ============================
 # 1. Tải & đổi tên cột sang tiếng Việt
@@ -122,3 +121,4 @@ fig4, ax4 = plt.subplots()
 ax4.barh(avg_rating.index[::-1], avg_rating.values[::-1])
 ax4.set_xlabel("Điểm trung bình")
 st.pyplot(fig4)
+
